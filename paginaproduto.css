@@ -1,0 +1,266 @@
+/* MENU */
+nav{
+    background-color: #780000;
+    padding: 10px 0;
+}
+.titulo{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.categorias{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+ 
+img:hover {
+    opacity: 0.8;
+}
+  img {
+    transition: all 0.3s ease-in-out;
+}
+  img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    position: relative;
+    margin: 0 18px;
+} 
+nav ul li a{
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;  
+}
+nav ul li a:hover{
+    color: #b41a1a;
+}
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #780000;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 160px;
+    padding: 0;
+}
+nav ul li .dropdown-content li{
+   margin: 0;
+}
+nav ul li .dropdown-content li a{
+    padding: 10px 15px;
+}
+ nav ul li .dropdown-content li a:hover{
+    background-color:#8e0e0e;
+}
+ nav ul li:hover .dropdown-content{
+    display: block;
+}
+ 
+
+/* OUTROS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*PÁGINA INTEIRA*/
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #f4f4f4; 
+    padding: 20px;
+}
+
+/* PRODUTOS */
+.produto {
+    display: flex; 
+    justify-content: space-around; 
+    background-color: #fff; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+.imagens-produto {
+    flex: 1; 
+}
+.imagem-principal {
+    width: 100%; 
+    max-width: 400px; 
+    margin-bottom: 10px; 
+}
+.miniaturas img {
+    width: 70px; 
+    margin-right: 10px; 
+    cursor: pointer; 
+}
+.detalhes-produto {
+    flex: 1; 
+}
+/*nome do produto */
+h2 {
+    color: #333; 
+    margin-bottom: 10px;
+}
+/*descrição do produto */
+.descricao {
+    color: #555; 
+    margin-bottom: 15px; 
+}
+/* Estiliza o preço do produto */
+.preco {
+    color: #780000; 
+    font-size: 24px; 
+    margin-bottom: 20px; 
+}
+.opcoes-compra {
+    display: flex; 
+    flex-direction: column;
+}
+label {
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+/*campos de seleção*/
+select {
+    padding: 8px; 
+    margin-bottom: 15px; 
+    border-radius: 5px; 
+    border: 1px solid #ddd; 
+}
+.comentarios {
+    margin-top: 20px;
+}
+.comentario {
+    display: flex; /*foto e o texto lado a lado */
+    align-items: center; /* foto e o texto verticalmente */
+    background-color: #fff; 
+    padding: 15px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 10px; 
+}
+.foto-usuario {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    margin-right: 15px;
+}
+.comentario p {
+    color: #333
+}
+
+
+/* BOTÃO */
+h1 {
+    position: relative;
+    text-align: center;
+    color: #d6e6fd;
+    font-size: 50px;
+    font-family: "Archivo Black", sans-serif;
+  }
+  .frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  button {
+    margin: 20px;
+  }
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .btn-15 {
+      background: #b41a1a;
+      border: none;
+      z-index: 1;
+    }
+    .btn-15:active {
+      top: 2px;
+    }
+
+
+
+/* RODAPÉ DO SITE - footer */
+.footer-section {
+    background-color: #780000; 
+    font-family: "Bebas Neue", sans-serif; 
+    padding: 40px 0; 
+    text-align: center; 
+}
+.footer-container {
+    color: white; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-section {
+    flex-basis: 23%; 
+    margin-bottom: 20px;
+}
+.footer-section h4 {
+    color: #fdecdc;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.footer-section p, .footer-section ul {
+    color: rgb(253, 254, 255); 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; 
+}
+.footer-section ul {
+    list-style-type: none; 
+}
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+.footer-section ul li a, .footer-section a {
+    color: rgb(255, 255, 255); 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+.footer-section ul li a:hover, .footer-section a:hover {
+    color: #b41a1a; 
+}
+.footer-bottom {
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+.footer-bottom p {
+    margin: 0;
+    color: white; 
+}

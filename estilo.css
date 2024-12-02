@@ -1,0 +1,321 @@
+
+/* MENU */
+nav{
+    background-color: #780000;
+    padding: 10px 0;
+}
+.titulo{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.categorias{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+ 
+img:hover {
+    opacity: 0.8;
+}
+  img {
+    transition: all 0.3s ease-in-out;
+}
+  img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    position: relative;
+    margin: 0 18px;
+} 
+nav ul li a{
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s;  
+}
+nav ul li a:hover{
+    color: #b41a1a;
+}
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #780000;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 160px;
+    padding: 0;
+}
+nav ul li .dropdown-content li{
+   margin: 0;
+}
+nav ul li .dropdown-content li a{
+    padding: 10px 15px;
+}
+ nav ul li .dropdown-content li a:hover{
+    background-color:#8e0e0e;
+}
+ nav ul li:hover .dropdown-content{
+    display: block;
+}
+ 
+
+/* BOTÃO */
+  h1 {
+    position: relative;
+    text-align: center;
+    color: #d6e6fd;
+    font-size: 50px;
+    font-family: "Archivo Black", sans-serif;
+  }
+  .frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  button {
+    margin: 20px;
+  }
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .btn-15 {
+      background: #b41a1a;
+      border: none;
+      z-index: 1;
+    }
+    .btn-15:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 100%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      background-color: #d22929;
+      border-radius: 5px;
+       box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+      transition: all 0.3s ease;
+    }
+    .btn-15:hover {
+      color: #ffffff;
+    }
+    .btn-15:hover:after {
+      left: 0;
+      width: 100%;
+    }
+    .btn-15:active {
+      top: 2px;
+    }
+
+/* SLIDE DE FOTOS */
+    .slidee {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;  
+        overflow: hidden;    
+        position: relative;    
+    }
+    .slides {
+        display: flex;
+        width: 100%;
+        animation: slideAnimation 18s infinite;
+    }  
+    .slide {  
+        width: 100%;
+        flex-shrink: 0;
+    }
+    
+    @keyframes slideAnimation {
+        0% {transform: translateX(0); }
+        33% {transform: translate(-100%); }
+        66% {transform: translateX(-200%);}
+        100% {transform: translate(0);}
+}
+    .slide img {  
+        width: 100%;
+        display: block;
+}
+
+
+/* MENSAGEM SE MECHENDO */
+.mensagem{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 65%;
+    font-style: bold;
+}
+
+
+/* TEXTOS */
+.p {
+    font-family: "Bebas Neue", sans-serif; 
+    font-size: 14px;
+    color: #000000;
+}
+
+.vd{
+    font-family: "Bebas Neue", sans-serif; 
+    font-size: 14px;
+    color: #000000; 
+}
+
+.lugares{
+    font-family: "Bebas Neue", sans-serif; 
+    font-size: 14px;
+    color: #000000;
+}
+.curiosidades{
+    font-family: "Bebas Neue", sans-serif; 
+    font-size: 14px;
+    color: #000000;
+}
+
+
+/* CARD */
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center; /* centraliza os cards na linha */
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* sombra leve */
+    flex: 1 1 45%; /* ocupa aproximadamente 45% do container */
+    max-width: 200px;
+    margin: 10px; /* margem ao redor de cada card */
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #6e4644;
+}
+
+.card p {
+    font-family: "Bebas Neue", sans-serif;
+    color: #666;
+    font-size: 0.9em;
+}
+
+
+/* GALERIA RESPONSIVA */
+
+.gallery {
+    display: grid;
+    gap: 0px;
+    padding: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+@media (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 768px) and (min-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* RODAPÉ DO SITE - footer */
+.footer-section {
+    background-color: #780000; 
+    font-family: "Bebas Neue", sans-serif; 
+    padding: 40px 0; 
+    text-align: center; 
+}
+.footer-container {
+    color: white; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-section {
+    flex-basis: 23%; 
+    margin-bottom: 20px;
+}
+.footer-section h4 {
+    color: #fdecdc;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.footer-section p, .footer-section ul {
+    color: rgb(253, 254, 255); 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; 
+}
+.footer-section ul {
+    list-style-type: none; 
+}
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+.footer-section ul li a, .footer-section a {
+    color: rgb(255, 255, 255); 
+    text-decoration: none; 
+    transition: color 0.3s; 
+}
+.footer-section ul li a:hover, .footer-section a:hover {
+    color: #b41a1a; 
+}
+.footer-bottom {
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+}
+.footer-bottom p {
+    margin: 0;
+    color: white; 
+}
+
+
